@@ -1,4 +1,4 @@
-class UserConversations < ActiveRecord::Migration[5.2]
+class CreateUserConversations < ActiveRecord::Migration[5.2]
   def change
     create_table :user_conversations do |t|
       t.references :sender, foreign_key: true, class: 'User'
